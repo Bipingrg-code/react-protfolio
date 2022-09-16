@@ -1,0 +1,41 @@
+.tools-icons{
+    height: 100vh;
+    background-color: greenyellow;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tools-img{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.tools-icons-img{
+    height: 90px;
+    width: 90px;
+}
+.tools-icons-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+.icons{
+    color: aqua;
+}
+.tools-icons-img img{
+   animation: dropIn 5s ease forwards infinite;
+   animation-delay: 4s;
+}
+@keyframes dropIn{
+  20%{
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  30%, 100%{
+    opacity: 1;
+    transform: translateY(-10%)
+  }
+}

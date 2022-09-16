@@ -2,14 +2,28 @@ import Intro from "./components/intro/Intro";
 import About from "./components/about/About";
 import ProductList from "./components/productList/ProductList";
 import Contact from "./components/contact/Contact";
+import Tools from "./components/technology/Tools";
+import Toggle from "./components/toggle/Toggle";
+import { useContext } from "react";
+import { ThemeContext } from "./context/Context";
 const App = () => {
-  return(
-    <div>
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
+  return (
+    <div
+      style={{
+        backgroundColor: darkMode ? "#222" : "white",
+        color: darkMode && "white",
+      }}
+    >
+      <Toggle />
       <Intro />
       <About />
+      <Tools />
       <ProductList />
-      <Contact/>
+      <Contact />
     </div>
-  )
-}
+  );
+};
 export default App;
