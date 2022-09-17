@@ -80,3 +80,22 @@
   top: 0;
   right: 0;
 }
+
+/*----REPONSIVE DESIGN------*/
+
+@media screen and (max-width: 480px) {
+  .i {
+    flex-direction: column;
+  }
+  .i-left-wrapper {
+    padding: 8px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+  .i-desc {
+    display: none;
+  }
+}

@@ -29,3 +29,17 @@
 .p:hover.p-images {
   transform: translateY(-100%);
 }
+/*----REPONSIVE DESIGN------*/
+
+@media screen and (max-width: 480px) {
+  .product {
+    width: 40%;
+    height: 20vh;
+  }
+}
+@media screen and (max-width: 786px) {
+  .product {
+    width: 45%;
+    height: 30vh;
+  }
+}

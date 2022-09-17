@@ -1,23 +1,36 @@
-.productList{
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.productList {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-.productList-text{
-    width: 65%;
+.productList-text {
+  width: 65%;
 }
-.productList-title{
-    font-size: 50px;
-    font-weight: 600;
+.productList-title {
+  font-size: 50px;
+  font-weight: 600;
 }
-.productList-disc{
-    margin: 20px 0px;
+.productList-disc {
+  margin: 20px 0px;
 }
-.productList-list{
+.productList-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/*----REPONSIVE DESIGN------*/
+
+@media screen and (max-width: 480px) {
+  .productList {
+    padding: 10px;
+  }
+  .productList-title {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  }
+  .productList-disc {
+    display: none;
+  }
 }
